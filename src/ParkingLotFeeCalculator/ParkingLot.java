@@ -13,7 +13,7 @@ public class ParkingLot {
 		ParkingLotSystem parkingLot = new ParkingLotSystem();
 		
 		ExecutorService executor = Executors.newFixedThreadPool(4);
-		
+
 		executor.submit(() -> {
 			Vehicle car1 = new Car("MH 03 AB 1234");
 			parkingLot.parkVehicle(car1);
